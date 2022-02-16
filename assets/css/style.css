@@ -1,0 +1,195 @@
+*{
+  box-sizing: border-box;
+}
+
+html,
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    background-color: rgb(252, 244, 232);
+}
+
+header {
+  display: flex;
+  padding: 20px;
+  padding-top: 0px;
+  color: hsl(206, 17%, 28%);
+  text-align: center;
+  flex-direction: row;
+  border-bottom: black solid;
+  border-width: thin;
+  margin-bottom: 30px;
+}
+
+h1, h4{
+  background-color: red;
+  color: gold;
+  font-family: 'Lobster', cursive;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+h1{
+  padding: 10px 100px 10px 100px;
+}
+
+h4{
+  background-color: blue;
+  margin: 0px 10px 0px 10px;
+}
+
+h5{
+  background-color: red;
+}
+
+
+header section{
+  width: 33%;
+}
+
+.row {
+  display:flex; /*added flex and replaced inline to get the search to run across the screen[change made on 02.08.2022 3:00pm by BBB [for review]]*/
+}
+
+.container{
+  margin: 5px;
+}
+
+
+.hero-section {
+  background: url(../images/hero-background.jpg) 50% no-repeat;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hero-section .hero-section-text {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+ul {
+  text-decoration: none;
+  margin: 0px;
+}
+
+ol {
+  column-count: 2;
+  column-gap: 100px;
+}
+
+a[id^="card"]{
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+
+
+#city-weather, #city-time{
+  background-color: white;
+  margin: 10px;
+}
+
+
+#clearCityBtnEl{
+  width: -webkit-fill-available;
+}
+
+#weather-current{
+  background-color: white;
+}
+
+.grid-container{
+  max-width: 95vw;
+}
+
+#useApp, #UI-activityTypers{
+  background-color: white;
+  text-align: justify;
+  padding: 10px;
+  margin: 20px 0px 20px 0px;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+}
+
+
