@@ -215,9 +215,35 @@ function getActivities() {
   var time = moment(new Date(cityWeatherData.dt * 1000)).format("h");
   var cod = Number(String(cityWeatherData.weather[0].id).charAt(0));
 
-  var outDoor = ["art_gallery", "tourist_attraction", "park"];
-  var indoor = ["Library", "art_gallery"];
-  var evening = ["cafe", "night_club", "bar"];
+  var outDoor = [
+    "art_gallery",
+    "tourist_attraction",
+    "park",
+    "zoo",
+    "stadium",
+    "car_wash",
+  ];
+  var indoor = [
+    "library",
+    "art_gallery",
+    "bar",
+    "casino",
+    "museum",
+    "restaurant",
+    "gym",
+    "cinema",
+    "bowling",
+  ];
+  var evening = [
+    "cafe",
+    "night_club",
+    "bar",
+    "museum",
+    "stadium",
+    "liquor_store",
+    "cinema",
+    "bowling",
+  ];
 
   if (Number(time) > 18) {
     return evening[Math.floor(Math.random() * evening.length)];
