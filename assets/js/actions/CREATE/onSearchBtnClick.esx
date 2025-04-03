@@ -1,0 +1,10 @@
+export default async function onSearchBtnClick(event) {
+  event.preventDefault();
+
+  console.log(event);
+  //Gets the city weather data and forwards that information to the handleSearchRequest function
+  //var cityName = event.target
+  getWeatherData(
+    searchInput.val() != "" ? searchInput.val() : event.target.innerHTML
+  );
+}
